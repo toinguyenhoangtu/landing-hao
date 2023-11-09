@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://fptshop.com.vn/LandingNew/css/icon-fptshop.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-      <!-- Link Swiper's CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
 </head>
@@ -42,32 +42,18 @@
 
         <!-- section breadcrumb -->
 
-        <section class="section-breadcrumb">
-            <div class="box-container">
-                <ol class="breadcrumb-list">
-                    <li>
-                        <a href="#">Trang chủ</a>
-                    </li>
-                    <div>/</div>
-                    <li>
-                        Samsung
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <!-- section banner -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Samsung</li>
+            </ol>
+          </nav>
 
         <!-- Slider main container -->
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper swiper-custom swiper-banner swiper-content swiper-top">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">
-                    <a href="#" class="banner-item">
-                        <img src="images/banner-image.png" alt="Galaxy S23 Series">
-                    </a>
-                </div>
                 <div class="swiper-slide">
                     <a href="#" class="banner-item">
                         <img src="images/banner-img1.png" alt="Galaxy S23 Series">
@@ -88,6 +74,11 @@
                         <img src="images/banner-img4.png" alt="Galaxy S23 Series">
                     </a>
                 </div>
+                <div class="swiper-slide">
+                    <a href="#" class="banner-item">
+                        <img src="images/banner-img5.png" alt="Galaxy S23 Series">
+                    </a>
+                </div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination">
@@ -95,57 +86,9 @@
             </div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            
+            <div class="swiper-button-prev ct-desk"></div>
+            <div class="swiper-button-next ct-desk"></div>
         </div>
-
-        <!-- <section class="box-container section-banner">
-            <div class="swiper-container">
-                <div class="swipper-content">
-                    <div class="swiper swiper-horizontal swiper-backface-hidden">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="#" class="banner-item">
-                                    <img src="images/banner-image.png" alt="Galaxy S23 Series">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#" class="banner-item">
-                                    <img src="images/banner-img1.png" alt="Galaxy S23 Series">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#" class="banner-item">
-                                    <img src="images/banner-img2.png" alt="Galaxy S23 Series">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#" class="banner-item">
-                                    <img src="images/banner-img3.png" alt="Galaxy S23 Series">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#" class="banner-item">
-                                    <img src="images/banner-img4.png" alt="Galaxy S23 Series">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev ct-desk"></div>
-                        <div class="swiper-button-next ct-desk"></div>
-                        <div class="swiper_pagination">
-                            <span class="swiper-pagination-bullet"></span>
-                            <span class="swiper-pagination-bullet"></span>
-                            <span class="swiper-pagination-bullet"></span>
-                            <span class="swiper-pagination-bullet"></span>
-                            <span class="swiper-pagination-bullet"></span>
-                            <span class="swiper-pagination-bullet"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <!-- section tabs -->
 

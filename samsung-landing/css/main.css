@@ -16,6 +16,104 @@
   margin-bottom: 24px;
   background-color: #212529; }
 
+.swiper-content .swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 7%; }
+
+.swiper-custom [class*=swiper-button] {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #a7a7b1;
+  border-radius: 50%;
+  top: calc(50% - 0px);
+  opacity: .7;
+  transition: all .3s ease; }
+
+.swiper-custom .swiper-button-prev:after {
+  content: "\f104"; }
+
+.swiper-custom .swiper-button-prev:after, .swiper-custom .swiper-button-next:after {
+  font-family: icon;
+  font-size: 16px;
+  color: #6c757d;
+  display: block; }
+
+.swiper-content .swiper-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 7%; }
+
+.swiper-custom .swiper-button-disabled {
+  opacity: 0;
+  transition: all .3s ease; }
+
+.swiper-custom .swiper-button-next:after {
+  content: "\f105"; }
+
+.swiper-custom .swiper-button-prev:after, .swiper-custom .swiper-button-next:after {
+  font-family: icon;
+  font-size: 16px;
+  color: #6c757d;
+  display: block; }
+
+.swiper-custom .swiper-pagination {
+  width: 100%;
+  bottom: 24px; }
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10; }
+
+.swiper-banner .swiper-pagination-bullet {
+  margin: 0 8px !important; }
+
+.swiper-custom .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px; }
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer; }
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--swiper-pagination-bullet-inactive-color, #000);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2); }
+
+.swiper-custom .swiper-pagination-bullet-active {
+  background: #cd1817; }
+
+@media only screen and (max-width: 991px) {
+  .swiper {
+    margin-bottom: 28px; }
+  .swiper-top .swiper-button-prev {
+    display: none; }
+  .swiper-top .swiper-button-next {
+    display: none; }
+  .swiper-custom .swiper-pagination {
+    bottom: 16px;
+    width: 100%; }
+  .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10; }
+  .swiper-custom .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 1000px;
+    margin: 0 4px !important; } }
+
 html,
 body {
   position: relative;

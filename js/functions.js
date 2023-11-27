@@ -39,7 +39,7 @@ $(document).ready(function () {
       dropdownBtn.click(function () {
         dropdownMenu.removeClass('open');
         dropdownMenu.addClass('open');
-      })
+      });
 
       dropdownItem.click(function (event) {
 
@@ -51,9 +51,9 @@ $(document).ready(function () {
 
         dropdownItem.removeClass('active');
         $(this).addClass('active');
-      })
-    })
-  };
+      });
+    });
+  }
 
   //click product memory buttons
 
@@ -66,9 +66,16 @@ $(document).ready(function () {
       btnMemory.click(function () {
         btnMemory.removeClass('active');
         $(this).addClass('active');
-      })
-    })
-  }
+      });
+    });
+  };
+
+  // click view more button
+  $(".js-view-more-button").click(function() {
+    var buttonText = $(".hidden-content").is(":visible") ? "Xem thêm" : "Thu gọn";
+    $(".hidden-content").slideToggle();
+    $(".js-view-more-button").text(buttonText);
+  });
 
   const init = function () {
     openDropdown();

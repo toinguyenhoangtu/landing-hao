@@ -1,0 +1,19 @@
+{
+  "name": "landing-hao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass/main.scss css/main.css",
+    "sass-detail": "node-sass -w sass/main-detail.scss css/main-detail.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5",
+    "swiper": "^11.0.4"
+  }
+}

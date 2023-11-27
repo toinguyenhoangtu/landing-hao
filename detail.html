@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Chi tiết sản phẩm</title>
+    <title>FPT Shop / Product Details</title>
     <meta name="description" content="FPT Shop" />
     <meta name="keywords" content="FPTSHOP" />
     <meta charset="utf-8" />
@@ -23,169 +23,543 @@
     <!-- Favicons -->
     <link rel="icon" href="images/favicon.ico" />
     <!-- Css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main-detail.css" />
     <link rel="stylesheet" href="https://fptshop.com.vn/LandingNew/css/icon-fptshop.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <main class="details">
-
-        <!-- breadcrumb -->
-        <div class="box-container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                    <li class="breadcrumb-item"><a href="#">Tivi</a></li>
-                    <li class="breadcrumb-item"><a href="#">Samsung</a></li>
-                </ol>
-            </nav>
-        </div>
-
-        <!-- detail heading -->
-        <div class="detail-heading">
+    <main class="detail">
+        <!-- product box -->
+        <div class="product-box">
             <div class="box-container">
+                <!-- breadcrum -->
                 <div class="row">
-                    <div class="col col-left">
-                        <h1 class="product-name">
-                            Samsung Tivi Khung Tranh 65 Inch (UA65LS003AKXXV)
-                        </h1>
-                        <span class="sku">(No.00580154)</span>
-                    </div>
-                    <div class="col col-right">
-                        <div class="rating-group">
-                            <ul class="rating-star">
-                                <li><span class="icon-star fill"></span></li>
-                                <li><span class="icon-star fill"></span></li>
-                                <li><span class="icon-star fill"></span></li>
-                                <li><span class="icon-star fill"></span></li>
-                                <li><span class="icon-star"></span></li>
-                            </ul>
-                            <div class="rating-link">
-                                <a class="re-link">72 đánh giá</a>
-                                <span>|</span>
-                                <a class="re-link">8 Hỏi & đáp</a>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#" class="link">Trang chủ</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#" class="link">Tivi</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a class="link">Samsung</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- detail heading -->
+                <div class="detail-heading">
+                    <div class="row">
+                        <div class="col col-left">
+                            <h1 class="product-name">
+                                Samsung Tivi Khung Tranh 65 Inch (UA65LS003AKXXV)
+                            </h1>
+                            <span class="sku">(No.00580154)</span>
+                        </div>
+                        <div class="col col-right">
+                            <div class="rating-group">
+                                <ul class="rating-star">
+                                    <li><i class="ic-star fill"></i></li>
+                                    <li><i class="ic-star fill"></i></li>
+                                    <li><i class="ic-star fill"></i></li>
+                                    <li><i class="ic-star fill"></i></li>
+                                    <li><i class="ic-star"></i></li>
+                                </ul>
+                                <a href="#">72 đánh giá</a>
+                                <span class="rating-span"> | </span>
+                                <a href="#">8 Hỏi & đáp</a>
+                            </div>
+                            <div class="compare-link">
+                                <a href="#">
+                                    <span class="ic-plus"></span>
+                                    So sánh
+                                </a>
                             </div>
                         </div>
-                        <a class="re-link">
-                            <span class="ic-plus"></span>
-                            So sánh
-                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="product">
-            <div class="row">
-                <div class="col-6">
-                    <div class="product__gallery">
-                        <div class="product-swiper swiper mySwiper swiper-custom swiper-banner swiper-content swiper-top">
+                <!-- detail info -->
+                <div class="detail-info row">
+                    <div class="col-6 detail-info__col-left">
+                        <!-- block detail swiper -->
+                        <div class="swiper-container swiper mySwiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <a href="#" class="banner-item">
-                                        <img src="images/tinified/samsung-tivi-khung-tranh-65in-slide.png"
-                                            alt="Product details slide 1">
-                                    </a>
+                                    <img src="images/tinified/samsung-tivi-khung-tranh-65in-slide.png" alt="detail slide 1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#" class="banner-item">
-                                        <img src="images/tinified/pd-slide-2.webp" alt="Product details slide 2">
-                                    </a>
+                                    <img src="images/tinified/samsung-tivi-khung-tranh-65in-slide.png" alt="detail slide 1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#" class="banner-item">
-                                        <img src="images/tinified/pd-slide-3.webp" alt="Product details slide 3">
-                                    </a>
+                                    <img src="images/tinified/samsung-tivi-khung-tranh-65in-slide.png" alt="detail slide 1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#" class="banner-item">
-                                        <img src="images/tinified/pd-slide-4.webp" alt="Product details slide 4">
-                                    </a>
+                                    <img src="images/tinified/samsung-tivi-khung-tranh-65in-slide.png" alt="detail slide 1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#" class="banner-item">
-                                        <img src="images/tinified/pd-slide-5.webp" alt="Product details slide 5">
-                                    </a>
+                                    <img src="images/tinified/samsung-tivi-khung-tranh-65in-slide.png" alt="detail slide 1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#" class="banner-item">
-                                        <img src="images/tinified/pd-slide-6.webp" alt="Product details slide 6">
-                                    </a>
+                                    <img src="images/tinified/samsung-tivi-khung-tranh-65in-slide.png" alt="detail slide 1">
                                 </div>
+                                <!-- ... -->
                             </div>
                             <!-- If we need pagination -->
-                            <div class="swiper-pagination">
-
-                            </div>
-
+                            <div class="swiper-pagination"></div>
                             <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev ct-desk"></div>
-                            <div class="swiper-button-next ct-desk"></div>
+                            <div class="swiper-button-prev">
+                                <span>
+                                    <i class="ic-angle-left"></i>
+                                </span>
+                            </div>
+                            <div class="swiper-button-next">
+                                <span>
+                                    <i class="ic-angle-right"></i>
+                                </span>
+                            </div>
                         </div>
 
-                        <!-- detail gallery -->
-                        <div class="detail-gallery">
-                            <a href="#" class="gallery-item">
+                        <!-- block detail feature -->
+                        <div class="detail-feature">
+                            <a href="#" class="feature-item">
                                 <span>
-                                    <i class="ic-photo"></i>
+                                    <i class="icon-photo"></i>
                                 </span>
                                 <p>Xem thêm 16 ảnh</p>
                             </a>
-                            <a href="#" class="gallery-item">
+                            <a href="#" class="feature-item">
                                 <span>
                                     <i class="icon-youtube"></i>
                                 </span>
                                 <p>Video trên tay</p>
                             </a>
-                            <a href="#" class="gallery-item">
+                            <a href="#" class="feature-item">
                                 <span>
-                                    <i class="ic-box"></i>
+                                    <i class="icon-box"></i>
                                 </span>
                                 <p>Trong hộp có gì</p>
                             </a>
-                            <a href="#" class="gallery-item">
+                            <a href="#" class="feature-item">
                                 <span>
-                                    <i class="ic-360"></i>
+                                    <i class="icon-360"></i>
                                 </span>
                                 <p>Ảnh 360 độ</p>
                             </a>
                         </div>
+
+                        <!-- block detail description -->
+                        <div class="detail-description">
+                            <ul>
+                                <li>
+                                    <span class="icon-mobile"></span>
+                                    <p>6.5", Super Retina XDR, Super AMOLED, 1242 x 2688 Pixel</p>
+                                </li>
+                                <li>
+                                    <span class="icon-cam"></span>
+                                    <p>12.0 MP + 12.0 MP + 12.0 MP</p>
+                                </li>
+                                <li>
+                                    <span class="icon-front-camera"></span>
+                                    <p>12.0 MP</p>
+                                </li>
+                                <li>
+                                    <span class="icon-cpu"></span>
+                                    <p>A13 Bionic</p>
+                                </li>
+                                <li>
+                                    <span class="ic-ram"></span>
+                                    <p>64 GB</p>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Xem chi tiết thông số kỹ thuật</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- block detail policy -->
+                        <div class="detail-policy">
+                            <div class="detail-policy__item">
+                                <span class="ic-adjust-time"></span>
+                                <p>Thời gian giao dự kiến 3-5 ngày</p>
+                            </div>
+                            <div class="detail-policy__item">
+                                <span class="ic-local-shipping"></span>
+                                <p>Giao hàng và lắp đặt miễn phí</p>
+                            </div>
+                        </div>
+                        <div class="detail-policy">
+                            <div class="detail-policy__item">
+                                <span class="icon-Combined-Shape"></span>
+                                <a href="#" class="link">Hàng chính hãng - Bảo hành 24 tháng theo chính sách của
+                                    Samsung</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="product__info">
-                        <!-- prices  -->
-                        <div class="product__info-prices">
-                            <div class="price-sale">100</div>
-                            <div class="price-old">200</div>
-                        </div>
-                        <!-- promotion  -->
-                        <div class="product__info-promo">
 
-                        </div>
-
-                        <!-- CTA  -->
-                        <div class="product__info-cta">
-                            <div class="btn btn-primary">Mua ngay</div>
+                    <!-- detail info col right -->
+                    <div class="col-6 detail-info__col-right">
+                        <!-- block product price -->
+                        <div class="product-price">
+                            <div class="product-price__new">
+                                27.990.000đ
+                            </div>
+                            <div class="product-price__old">
+                                33.990.000đ
+                            </div>
                         </div>
 
+                        <!-- block product promo -->
+                        <div class="product-promo">
+                            <!-- promo title -->
+                            <div class="promo-title">
+                                Chọn 1 trong 4 khuyến mãi sau
+                            </div>
+
+                            <!-- promo list -->
+                            <ul class="promo-list">
+                                <li>
+                                    <div class="radio">
+                                        <input type="radio" id="promotion-option-1" name="promotion1" value="1" checked>
+                                        <label for="promotion-option-1">
+                                            <div class="promo-option-group">
+                                                <div class="promo-option-item">
+                                                    <div class="promo-image">
+                                                        <img src="images/phieu-mua-hang-500k.png" alt="phieu-mua-hang-500k">
+                                                    </div>
+                                                    <div class="promo-text">
+                                                        Phiếu mua hàng<br>
+                                                        trị giá 500K
+                                                    </div>
+                                                </div>
+                                                <div class="promo-plus">+</div>
+                                                <div class="promo-option-item">
+                                                    <div class="promo-image">
+                                                        <img src="images/balo.png" alt="balo">
+                                                    </div>
+                                                    <div class="promo-text">
+                                                        Tặng Balo<br>
+                                                        Laptop                                                    </div>
+                                                </div>
+                                                <div class="promo-plus">+</div>
+                                                <div class="promo-option-item">
+                                                    <div class="promo-image">
+                                                        <img src="images/sac-du-phong.png" alt="sac-du-phong">
+                                                    </div>
+                                                    <div class="promo-text">
+                                                        Tặng sạc dự phòng<br>
+                                                        10.000 mAh
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <input type="radio" id="promotion-option-2" name="promotion1" value="0">
+                                        <label for="promotion-option-2">
+                                            <div class="promo-text">
+                                                Giảm ngay 1.000.000đ áp dụng đến 03/05
+                                                + Trả góp 0%
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <input type="radio" id="promotion-option-3" name="promotion1" value="0">
+                                        <label for="promotion-option-3">
+                                            <div class="promo-text">
+                                                Giảm ngay 3,000,000đ vi vu du lịch (đã trừ vào giá) & Quay số trúng thưởng với tổng trị giá lên tới 2 tỷ
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <input type="radio" id="promotion-option-4" name="promotion1" value="0">
+                                        <label for="promotion-option-4">
+                                            <div class="promo-text">
+                                                Tặng PMH PK 500.000đ   
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- promo title tag -->
+                            <div class="promo-title-tag">
+                                <div class="title-tag">
+                                    Ưu đãi thêm
+                                </div>
+                            </div>
+
+                            <!-- promo check list -->
+                            <ul class="promo-box-check-list">
+                                <li>
+                                    <i class="icon-ok-circled"></i>
+                                    <div>Thu cũ đổi mới lên tới 
+                                        <span>14 triệu</span>
+                                        .
+                                        <a href="#" class="link">Xem chi tiết</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon-ok-circled"></i>
+                                    <div>Tặng suất mua Đồng hồ thời trang 
+                                        <span>giảm đến 40%</span>
+                                        .
+                                        <a href="#" class="link">Xem chi tiết</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="cta btn btn-primary">
+                            <strong>MUA NGAY</strong>
+                        </div>
+
+                        <!-- hotline -->
+                        <div class="hotline">
+                            Gọi 
+                            <span>1800-6601</span>
+                             để được tư vấn mua hàng (Miễn phí)
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- detail row -->
+        <div class="box-container">
+            <div class="detail-row">
+                <!-- detail col left -->
+                <div class="detail-col-left">
+
+                    <!-- card title -->
+                    <h2 class="card-title mt-16 mb-16">Đặc điểm nổi bật</h2>
+
+                    <!-- card content -->
+                    <div class="card-content">
+
+                        <!-- block detail swiper -->
+                        <div class="swiper-container swiper mySwiper">
+
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="images/tinified/card-swiper-img1.png" alt="detail slide 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/tinified/card-swiper-img1.png" alt="detail slide 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/tinified/card-swiper-img1.png" alt="detail slide 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/tinified/card-swiper-img1.png" alt="detail slide 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/tinified/card-swiper-img1.png" alt="detail slide 1">
+                                </div>
+                                <!-- ... -->
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev">
+                                <span>
+                                    <i class="ic-angle-left"></i>
+                                </span>
+                            </div>
+                            <div class="swiper-button-next">
+                                <span>
+                                    <i class="ic-angle-right"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- block post content -->
+                        <div class="post-content mt-16">
+                            <h2 class="card-title mb-24 text-center">Đánh giá iPhone 11 Pro và iPhone 11 Pro Max</h2>
+                            <p class="card-text mb-16">Thiết kế bộ đôi iPhone 11 Pro|11 Pro Max là những nâng cấp nhỏ nhưng đem lại trải nghiệm thú vi nhất khi trải nghiệm.</p>
+                            <h3 class="card-title-sm mb-8">Màn hình là một nâng cấp lớn đối với iPhone 11 Pro|11 Pro Max</h3>
+                            <p class="card-text mb-16">Màn hình của iPhone 11 Pro hiện đã được nâng cấp lên với công nghệ mới mà Apple gọi là Super Retina XDR đem đến độ sáng màn hình tối đa lên đến 1200 nits và Apple đã loại bỏ đi 3D Touch. Thành thực mà nói, 3D Touch với một số người không mấy hấp dẫn nhưng với một số thì đây là một tính năng khá thú vị.</p>    
+                            <div  class="card-image">
+                                <img src="images/iphone-11-pro-img.png" alt="Iphone 11 Pro | 11 Pro Max">
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <h2 class="card-title mb-24 text-center">Đánh giá iPhone 11 Pro và iPhone 11 Pro Max</h2>
+                            <p class="card-text mb-16">Thiết kế bộ đôi iPhone 11 Pro|11 Pro Max là những nâng cấp nhỏ nhưng đem lại trải nghiệm thú vi nhất khi trải nghiệm.</p>
+                            <h3 class="card-title-sm mb-8">Màn hình là một nâng cấp lớn đối với iPhone 11 Pro|11 Pro Max</h3>
+                            <p class="card-text mb-16">Màn hình của iPhone 11 Pro hiện đã được nâng cấp lên với công nghệ mới mà Apple gọi là Super Retina XDR đem đến độ sáng màn hình tối đa lên đến 1200 nits và Apple đã loại bỏ đi 3D Touch. Thành thực mà nói, 3D Touch với một số người không mấy hấp dẫn nhưng với một số thì đây là một tính năng khá thú vị.</p>    
+                            <div>
+                                <img src="images/iphone-11-pro-img.png" alt="Iphone 11 Pro | 11 Pro Max">
+                            </div>
+                        </div>
+                        <div class="view-more-overlay">
+                            <span class="view-more-button js-view-more-button">
+                                Xem thêm
+                                <span class="ic-angle-down"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right col -->
+                <div class="detail-col-right">
+
+                    <!-- Thong so ky thuat -->
+                    <div class="product-properties">
+                        <h2 class="card-title mb-16">Thông số kĩ thuật</h2>
+                        <div class="card-body">
+                            <table class="card-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Màn hình</td>
+                                        <td>5.8", Super Retina XDR, Super AMOLED, 1125 x 2436 Pixel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Camera sau</td>
+                                        <td>12.0 MP + 12.0 MP + 12.0 MP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Camera Selfie</td>
+                                        <td>12.0 MP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RAM</td>
+                                        <td>4 GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bộ nhớ trong</td>
+                                        <td>512 GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CPU</td>
+                                        <td>A13 Bionic</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPU</td>
+                                        <td>Apple GPU 4 nhân</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dung lượng pin</td>
+                                        <td>3046 mAh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thẻ sim</td>
+                                        <td>1, 1 eSIM, 1 Nano SIM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hệ điều hành</td>
+                                        <td>iOS 13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="table-attach-link">
+                                <a href="#" class="attach-link">
+                                    <i class="icon-wattage"></i>
+                                    Hướng dẫn sử dụng
+                                    <span>(PDF, 3MB)</span>
+                                </a>
+                            </div>
+                            <div class="table-view-detail">
+                                <a href="#" class="link js-open-modal">
+                                    Xem cấu hình chi tiết
+                                    <span class="ic-right-dir"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bai viet lien quan -->
+                    <div class="related-post">
+                        <div class="post-heading">
+                            <h2 class="post-title">Bài viết liên quan</h2>
+                            <a href="#" class="link">Xem tất cả</a>
+                        </div>
+                        <div class="post-list">
+                            <div class="post-item">
+                                <div class="post-item-image">
+                                    <img src="images/post1.png" alt="post 1">
+                                </div>
+                                <div class="post-item-title">
+                                    Những lý do nên lựa chọn laptop Asus TUF FA506II-AL012T để chiến game
+                                    <div class="tag-list">
+                                        <div class="badge">Tin khuyến mãi</div>
+                                        <div class="badge">Mẹo laptop</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="post-item-image">
+                                    <img src="images/post2.png" alt="post 2">
+                                </div>
+                                <div class="post-item-title">
+                                    Tìm hiểu Lenovo IdeaPad L340: Laptop gaming giá siêu rẻ, phù hợp cho cả sinh viên và người đi làm
+                                    <div class="tag-list">
+                                        <div class="badge">Tin khuyến mãi</div>
+                                        <div class="badge">Mẹo laptop</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="post-item-image">
+                                    <img src="images/post3.png" alt="post 3">
+                                </div>
+                                <div class="post-item-title">
+                                    Asus VivoBook 14 M413IA: Laptop phổ thông, mỏng nhẹ chạy AMD Ryzen 4000 series
+                                    <div class="tag-list">
+                                        <div class="badge">Tin khuyến mãi</div>
+                                        <div class="badge">Mẹo laptop</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="post-item-image">
+                                    <img src="images/post4.png" alt="post 4">
+                                </div>
+                                <div class="post-item-title">
+                                    Asus Zephyrus GA401IU: Tuyệt tác laptop 14 inch cấu hình siêu mạnh
+                                    <div class="tag-list">
+                                        <div class="badge">Tin khuyến mãi</div>
+                                        <div class="badge">Mẹo laptop</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="post-item-image">
+                                    <img src="images/post5.png" alt="post 5">
+                                </div>
+                                <div class="post-item-title">
+                                    Đây là chiếc laptop siêu mỏng nhẹ, hiệu năng mạnh, giá hấp dẫn, đáng mua nhất
+                                    <div class="tag-list">
+                                        <div class="badge">Tin khuyến mãi</div>
+                                        <div class="badge">Mẹo laptop</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 <!-- Js -->
@@ -195,5 +569,7 @@
 <script src="js/libs/jquery.js"></script>
 <script src="js/functions.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Include Swiper CSS and JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </html>

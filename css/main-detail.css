@@ -320,6 +320,10 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
 
+/* Apply this style when the modal is open */
+body.modal-open {
+  overflow: hidden; }
+
 .detail {
   background-color: #F8F9FA; }
 
@@ -434,7 +438,7 @@ a {
 .swiper-button-prev span {
   width: 40px;
   height: 40px;
-  padding: 12px 13px 12px 11px;
+  padding: 12px;
   border-radius: 100px;
   border: 1px;
   display: flex;
@@ -458,7 +462,7 @@ a {
   height: 40px;
   top: 226.5px;
   left: 529px;
-  padding: 12px 11px 12px 13px;
+  padding: 12px;
   border-radius: 100px;
   border: 1px;
   display: flex;
@@ -697,7 +701,8 @@ a {
   background-color: #CB1C22;
   border: 1px solid #CB1C22;
   border-radius: 6px;
-  padding: 18px 32px; }
+  padding: 18px 32px;
+  cursor: pointer; }
   .cta strong {
     font-size: 20px;
     line-height: 20px;
@@ -709,7 +714,7 @@ a {
   line-height: 14px;
   font-weight: 400;
   color: #444b52; }
-  .hotline span {
+  .hotline .re-hotline {
     font-size: 14px;
     line-height: 14px;
     font-weight: 500;
@@ -794,7 +799,7 @@ a {
 
 .view-more-overlay {
   position: absolute;
-  z-index: 100;
+  z-index: 3;
   bottom: -2px;
   left: 0;
   right: 500px;
@@ -865,8 +870,10 @@ a {
   justify-content: center; }
   .table-view-detail a {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 4px; }
+    .table-view-detail a span::before {
+      font-size: 14px; }
 
 .related-post {
   border-radius: 6px;
@@ -891,23 +898,25 @@ a {
 .post-item {
   display: flex;
   gap: 8px; }
-  .post-item-image {
+  .post-item .post-image {
     max-width: 120px;
-    max-height: 80px;
+    width: 100%;
     border-radius: 4px; }
-  .post-item-title {
+  .post-item .post-info {
     padding: 4px 0 0 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    color: #444b52; }
-    .post-item-title .tag-list {
+    gap: 8px; }
+    .post-item .post-info a .post-name {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: #444b52; }
+    .post-item .post-info .tag-list {
       display: flex;
+      flex-wrap: wrap;
       gap: 8px; }
-      .post-item-title .tag-list .badge {
+      .post-item .post-info .tag-list .badge {
         border-radius: 4px;
         border: 1px solid #EDEEEF;
         background: #EDEEEF;
@@ -916,3 +925,38 @@ a {
         font-size: 14px;
         line-height: 14px;
         color: #6A737A; }
+
+.truncate2 {
+  display: -webkit-box;
+  max-width: 308px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
+
+#myModal {
+  z-index: 10;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto; }
+
+.modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: auto; }
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer; }

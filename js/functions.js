@@ -77,6 +77,26 @@ $(document).ready(function () {
     $(".js-view-more-button").text(buttonText);
   });
 
+  // Open the modal
+  $(".openModalBtn").click(function () {
+    $("#myModal").show();
+    $("body").addClass("modal-open");
+  });
+
+  // Close the modal
+  $(".close").click(function () {
+    $("#myModal").hide();
+    $("body").removeClass("modal-open");
+
+  });
+
+  // Close the model when pressing the "Esc" key
+  $(document).keydown(function (e) {
+    if (e.key === "Escape") {
+      $("#myModal").hide();
+    }
+  });
+
   const init = function () {
     openDropdown();
     clickProductMemory();

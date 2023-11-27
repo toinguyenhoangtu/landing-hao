@@ -182,7 +182,7 @@
                                     <p>64 GB</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="link">Xem chi tiết thông số kỹ thuật</a>
+                                    <a class="openModalBtn link">Xem chi tiết thông số kỹ thuật</a>
                                 </li>
                             </ul>
                         </div>
@@ -334,7 +334,7 @@
                         <!-- hotline -->
                         <div class="hotline">
                             Gọi 
-                            <span>1800-6601</span>
+                            <a href="tel:18006601" class="re-hotline">1800-6601</a>
                              để được tư vấn mua hàng (Miễn phí)
                         </div>
                     </div>
@@ -394,7 +394,7 @@
                         </div>
 
                         <!-- block post content -->
-                        <div class="post-content mt-16">
+                        <div class="post-content">
                             <h2 class="card-title mb-24 text-center">Đánh giá iPhone 11 Pro và iPhone 11 Pro Max</h2>
                             <p class="card-text mb-16">Thiết kế bộ đôi iPhone 11 Pro|11 Pro Max là những nâng cấp nhỏ nhưng đem lại trải nghiệm thú vi nhất khi trải nghiệm.</p>
                             <h3 class="card-title-sm mb-8">Màn hình là một nâng cấp lớn đối với iPhone 11 Pro|11 Pro Max</h3>
@@ -480,7 +480,7 @@
                                 </a>
                             </div>
                             <div class="table-view-detail">
-                                <a href="#" class="link js-open-modal">
+                                <a class="openModalBtn link">
                                     Xem cấu hình chi tiết
                                     <span class="ic-right-dir"></span>
                                 </a>
@@ -488,6 +488,20 @@
                         </div>
                     </div>
 
+                    <!-- modal -->
+                    <div id="myModal" class="modal">
+                        <div class="modal-wrapper">
+                            <div class="modal-title text-center mb-16">
+                                <h2 class="card-title">
+                                    Cấu hình chi tiết iPhone 14 Pro Max
+                                    <span class="close">&times;</span>
+                                </h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>iPhone 14 Pro Max đem đến những trải nghiệm không thể tìm thấy trên mọi thế hệ iPhone trước đó với màu Tím Deep Purple sang trọng, camera 48MP lần đầu xuất hiện, chip A16 Bionic và màn hình “viên thuốc” Dynamic Island linh hoạt, nịnh mắt.</p>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Bai viet lien quan -->
                     <div class="related-post">
                         <div class="post-heading">
@@ -496,62 +510,82 @@
                         </div>
                         <div class="post-list">
                             <div class="post-item">
-                                <div class="post-item-image">
+                                <div class="post-image">
                                     <img src="images/post1.png" alt="post 1">
                                 </div>
-                                <div class="post-item-title">
-                                    Những lý do nên lựa chọn laptop Asus TUF FA506II-AL012T để chiến game
+                                <div class="post-info">
+                                    <a href="#">
+                                        <h3 class="post-name truncate2">
+                                            Những lý do nên lựa chọn laptop Asus TUF FA506II-AL012T để chiến game
+                                        </h3>
+                                    </a>
                                     <div class="tag-list">
-                                        <div class="badge">Tin khuyến mãi</div>
-                                        <div class="badge">Mẹo laptop</div>
+                                        <a href="#" class="badge">Tin khuyến mãi</a>
+                                        <a href="#" class="badge">Mẹo laptop</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="post-item">
-                                <div class="post-item-image">
+                                <div class="post-image">
                                     <img src="images/post2.png" alt="post 2">
                                 </div>
-                                <div class="post-item-title">
-                                    Tìm hiểu Lenovo IdeaPad L340: Laptop gaming giá siêu rẻ, phù hợp cho cả sinh viên và người đi làm
+                                <div class="post-info">
+                                    <a href="#">
+                                        <h3 class="post-name truncate2">
+                                            Tìm hiểu Lenovo IdeaPad L340: Laptop gaming giá siêu rẻ, phù hợp cho cả sinh viên và người đi làm
+                                        </h3>
+                                    </a>
                                     <div class="tag-list">
-                                        <div class="badge">Tin khuyến mãi</div>
-                                        <div class="badge">Mẹo laptop</div>
+                                        <a href="#" class="badge">Tin khuyến mãi</a>
+                                        <a href="#" class="badge">Mẹo laptop</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="post-item">
-                                <div class="post-item-image">
+                                <div class="post-image">
                                     <img src="images/post3.png" alt="post 3">
                                 </div>
-                                <div class="post-item-title">
-                                    Asus VivoBook 14 M413IA: Laptop phổ thông, mỏng nhẹ chạy AMD Ryzen 4000 series
+                                <div class="post-info">
+                                    <a href="#">
+                                        <h3 class="post-name truncate2">
+                                            Asus VivoBook 14 M413IA: Laptop phổ thông, mỏng nhẹ chạy AMD Ryzen 4000 series
+                                        </h3>
+                                    </a>
                                     <div class="tag-list">
-                                        <div class="badge">Tin khuyến mãi</div>
-                                        <div class="badge">Mẹo laptop</div>
+                                        <a href="#" class="badge">Tin khuyến mãi</a>
+                                        <a href="#" class="badge">Mẹo laptop</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="post-item">
-                                <div class="post-item-image">
+                                <div class="post-image">
                                     <img src="images/post4.png" alt="post 4">
                                 </div>
-                                <div class="post-item-title">
-                                    Asus Zephyrus GA401IU: Tuyệt tác laptop 14 inch cấu hình siêu mạnh
+                                <div class="post-info">
+                                    <a href="#">
+                                        <h3 class="post-name truncate2">
+                                            Asus Zephyrus GA401IU: Tuyệt tác laptop 14 inch cấu hình siêu mạnh
+                                        </h3>
+                                    </a>
                                     <div class="tag-list">
-                                        <div class="badge">Tin khuyến mãi</div>
-                                        <div class="badge">Mẹo laptop</div>
+                                        <a href="#" class="badge">Tin khuyến mãi</a>
+                                        <a href="#" class="badge">Mẹo laptop</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="post-item">
-                                <div class="post-item-image">
+                                <div class="post-image">
                                     <img src="images/post5.png" alt="post 5">
                                 </div>
-                                <div class="post-item-title">
-                                    Đây là chiếc laptop siêu mỏng nhẹ, hiệu năng mạnh, giá hấp dẫn, đáng mua nhất
+                                <div class="post-info">
+                                    <a href="#">
+                                        <h3 class="post-name truncate2">
+                                            Đây là chiếc laptop siêu mỏng nhẹ, hiệu năng mạnh, giá hấp dẫn, đáng mua nhất
+                                        </h3>
+                                    </a>
                                     <div class="tag-list">
-                                        <div class="badge">Tin khuyến mãi</div>
-                                        <div class="badge">Mẹo laptop</div>
+                                        <a href="#" class="badge">Tin khuyến mãi</a>
+                                        <a href="#" class="badge">Mẹo laptop</a>
                                     </div>
                                 </div>
                             </div>
